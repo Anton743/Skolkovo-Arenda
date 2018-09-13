@@ -1,0 +1,47 @@
+/* Скачать презентацию (.pdf 8,6 Мб) */
+
+position: absolute;
+width: 227px;
+height: 14px;
+left: 1334px;
+top: 3016px;
+
+font-family: HelveticaNeueCyr;
+line-height: normal;
+font-size: 14px;
+text-decoration-line: underline;
+
+color: #555555;
+
+
+/* Frame */
+
+position: absolute;
+width: 1920px;
+height: 592px;
+left: -2px;
+top: 4079px;
+
+
+
+/* Rectangle 6 */
+
+position: absolute;
+width: 1920px;
+height: 592px;
+left: 0px;
+top: 0px;
+
+background: #CDDD00;
+
+
+/* Layer 1.1 */
+
+position: absolute;
+width: 438px;
+height: 331px;
+left: 525px;
+top: 356px;
+
+background: url(Layer 1.png);
+mix-blend-mode: soft-light;
