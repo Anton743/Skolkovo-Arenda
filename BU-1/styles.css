@@ -9,36 +9,19 @@ div{ box-sizing: border-box; }
 
 .container{
 	max-width: 100%;
-	width: 1240px;
-	padding: 0 20px;
+	width: 1200px;
 	margin: 0 auto;
 }
 
 .PageArenda__header{
-	position: relative;
-	/*display: flex;
-	justify-content: space-between;
-	min-height: 100px;
-	align-items: center;*/
-
-}
-.PageArenda__header_logo{
-	display: block;
-	position: absolute;
-	height: 100%;
-	left: 20px;
-}
-.a1{
-	margin-left: 140px;
 	display: flex;
-	min-height: 100px;
+	justify-content: space-between;
+	/*min-height: 100px;*/
 	align-items: center;
-	justify-content: flex-end;
+
 }
-
-
 .PageArenda__header_nav{
-	width: calc( 92% - 265px);
+	width: 50%;
 }
 .PageArenda__header_nav_list{
 	display: flex;
@@ -98,8 +81,7 @@ div{ box-sizing: border-box; }
 
 .PageArenda__header_contacts{
 	text-align: right;
-	padding: 12px 0 0;
-	width: 265px;
+	padding: 35px 0 23px;
 }
 
 .PageArenda__header_contacts-phone{
@@ -126,7 +108,7 @@ div{ box-sizing: border-box; }
 	z-index: 1;
 	background-image: url(img/MainPic.jpg);
 	background-repeat: no-repeat;
-	padding-top: 200px;padding-bottom: 250px;
+	padding: 200px 0 250px;
 }
 
 .PageArenda__MainPic_pic{
@@ -137,7 +119,7 @@ div{ box-sizing: border-box; }
 .PageArenda__MainPic_text{
 background: rgba(205, 221, 0, 0.7);
 text-align: center;
-padding-top: 55px;padding-bottom: 70px;
+padding: 55px 0 70px;
 /*backdrop-filter: blur(14px); 
  Note: backdrop-filter has minimal browser support */
 }
@@ -205,15 +187,12 @@ padding-top: 55px;padding-bottom: 70px;
     justify-content: left;
     margin-bottom: 23px; margin-left: 22px;
 }
-
-}
 .PageArenda__form_list:last-child{
 	margin-bottom: 0;
 }
 .list_container{
 	position: relative;
 	height: 37px;
-	min-width: 139px;
 	width: calc(115px + 24.71px);
 }
 .list_number{
@@ -263,19 +242,17 @@ padding-top: 55px;padding-bottom: 70px;
 
 
 }
+.PageArenda__form_text{overflow:hidden;}
 
 #ConsultForm{
 	position: relative;
 	z-index: 2;
 	background: #BFDF14;
-	padding-top: 31px;
-    padding-left: 104px;
-    padding-bottom: 44px;
-    padding-right: 45px;
+	padding: 31px 104px 44px 79px;
 }
 .PageArenda__form_data{
 	width: 55%;
-	width: 604px;
+	max-width: 604px;
 }
 
 .PageArenda__form_data input{
@@ -314,7 +291,6 @@ padding-top: 55px;padding-bottom: 70px;
 	line-height: normal;
 	font-size: 22px;
 	color: #FFFFFF;
-	width: 421px;
 }
 #YourComment textarea{
 	height: 92px;
@@ -519,8 +495,7 @@ padding-top: 55px;padding-bottom: 70px;
 	justify-content: space-between;
 	flex-direction: row;
 	flex-wrap: wrap;
-	padding-top: 93px;
-	padding-bottom: 93px; 
+	padding: 93px 0 93px; 
 }
 
 .PageArenda__contacts_logo-back{
@@ -543,14 +518,11 @@ padding-top: 55px;padding-bottom: 70px;
 
 #ContactForm{
 	background: transparent;
-	padding-right: 22px;
-    padding-left: 60px;
-    z-index: 2;
-	width: 503px;
+	padding:0 22px 0 160px;
 }
 
 .PageArenda__contacts_text{
-	width: 42%;
+	width: 45%;
 }
 .PageArenda__contacts_title{
 	font-family: HelveticaNeueCyr;
@@ -710,7 +682,7 @@ padding-top: 55px;padding-bottom: 70px;
 }
 
 
-
+////////////////////////////////
 .PageArenda__footer_wrapper{
 	background: url(img/footer_back.jpg) no-repeat;
 	background-position: center;
@@ -721,113 +693,16 @@ padding-top: 55px;padding-bottom: 70px;
 	justify-content: space-between;
 
 }
+////////////////////////////////////
 
-@media screen and (max-width: 1138px) {
-	.PageArenda__form_wrapper{
-		flex-direction: column;
-	}
-	.PageArenda__form_text{
-		width: 100%;
-	}
-	.PageArenda__form_data{
-		width: 100%;
-	}
-	.PageArenda__form_list .list_text:after{
-		right: calc( -1051px - 17px);
-    	width: 1051px;
-	}
-	.PageArenda__form_list_item{
-		overflow: hidden;
-	}
-	#ConsultForm{
-		margin: 0 auto;
-		max-width: 604px;
-	}
-}
-@media screen and (max-width: 1024px) {
+@media screen and ( max-width: 1024px ){
 
-	.a1{
-		flex-direction: column;
-		align-items: flex-start;
-	}
-	.PageArenda__header_contacts{
-		text-align: left;
-		width: 100%;
-	}
-	.PageArenda__header_contacts a{
-		display:inline-block;
-		margin-left: 20px;
-	}
-	.PageArenda__header_nav{
-		width: 75%;
-		margin-left: 20px;
-	}
-	.PageArenda__header_nav_list{
-		justify-content: space-between;
-	}
 
-	.PageArenda__headline{
-		font-size: 37px;
-	}
-	
-	.PageArenda__headline{
-		margin: 80px auto 32px;
-	}
-	.PageArenda__form_text{
-		padding-top: 40px;
-	}
-	#WeOffer{
-		margin-top: 100px;
-		margin-bottom: 17px;
-	}
-	.PageArenda__content_number{
-		line-height: 219px;
-    	font-size: 140px;
-	}
-	.PageArenda__content_text{
-		margin-bottom: 36px;
-	}
-	#ArendaRates{
-		margin-top: 128px;
-    	margin-bottom: 12px;
-	}
+
 
 
 }
 
-@media screen and (max-width: 940px) {
-	.PageArenda__contacts{
-		flex-direction: column;
-		padding-top: 73px;
-    	padding-bottom: 73px;
-	}
-	.PageArenda__contacts_text{
-		width: 100%;
-	}
-	.PageArenda__contacts_title{
-		text-align: center;
-	}
-	.Dudarev-Afanasiev{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-	}
-	#ContactForm{
-		margin: 35px auto 0px;
-	}
-	.PageArenda__form_title{
-		text-align: center;
-	}
-
-
-}
-@media screen and (max-width: 767px) {
-	.PageArenda__header_nav{
-		width: 85%;
-	}
-
-
-}
 @font-face {font-family:HelveticaNeueCyr;
   src:url("font/helvetica-neue-cyr_normal/font.ttf");
   font-weight: normal;

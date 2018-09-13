@@ -9,8 +9,8 @@
  </head>
  <body>
  	<div class="PageArenda">
- 		<div class="PageArenda__container">
- 			<div class="PageArenda__header">
+ 
+ 			<div class="PageArenda__header container">
  				<div class="PageArenda__header_logo">
  					<img src="img/skolkovo-logo.svg">
  				</div>
@@ -23,11 +23,11 @@
  					</ul>
  				</div>
  				<div class="PageArenda__header_contacts">
- 					<span class="PageArenda__header_contacts-phone">+7 (495) 956 00 33 доб. 2603</span><br>
+ 					<a class="PageArenda__header_contacts-phone" href="tel:+74959560033p2603">+7 (495) 956 00 33 доб. 2603</a><br>
  					<a class="PageArenda__header_contacts-mail" href="mailto:RAfanasev@sk.ru">RAfanasev@sk.ru</a>
  				</div>
  			</div>
- 			<div class="PageArenda__MainPic">
+ 			<div class="PageArenda__MainPic container">
  				<div class="PageArenda__MainPic_text">
  					<div class="PageArenda__MainPic_text-offices">Офисы и лаборатории					
  					</div>
@@ -35,10 +35,10 @@
  					<div class="PageArenda__MainPic_text-arenda">Аренда офисных и лабораторных площадей в Технопарке «Сколково»</div>
  				</div>
  			</div>
- 			<div id="GetConsulting" class="PageArenda__headline">Получите консультацию прямо сейчас
+ 			<div id="GetConsulting" class="PageArenda__headline container">Получите консультацию прямо сейчас
  				<div class="PageArenda line-left"></div>
  			</div>
- 			<div class="PageArenda__form_wrapper">
+ 			<div class="PageArenda__form_wrapper container">
  				<div class="PageArenda__form_text">
 
  					<ul class="PageArenda__form_list">
@@ -80,23 +80,23 @@
  					</ul>
 
  				</div>
- 				<div class="PageArenda__form_data">
+ 				<div id="ConsultForm" class="PageArenda__form_data">
  					<form name="user_data" action="">
  						<span class="PageArenda__form data-description">Ваше имя</span>
  						<div id="YourName"><input type="text" name="user_name"></div>
  						<span class="PageArenda__form data-description">Ваш телефон</span>
  						<div id="YourPhone"><input type="tel" name="user_phone"></div>
  						<span class="PageArenda__form data-description">Ваш комментарий</span>
- 						<div id="YourComment"><input type="text" name="user_comment"></div>
+ 						<div id="YourComment"><textarea name="user_comment"></textarea></div>
  						<input type="submit" name="user_submit" value="Отправить">
  					</form>
  					
  				</div>
  			</div>
- 			<div id="WeOffer" class="PageArenda__headline">Мы предлагаем
+ 			<div id="WeOffer" class="PageArenda__headline container">Мы предлагаем
  				<div class="PageArenda line-left"></div>
  			</div>
- 			<div class="PageArenda__content content-squares">
+ 			<div class="PageArenda__content content-squares container">
  				<div class="PageArenda__content_header">
  					<div class="PageArenda__content_header content-pic"><img src="img/square.svg">
  					</div>
@@ -114,8 +114,9 @@
 
 					До офиса можно добраться на машине, автобусе или электричке. Машину придётся оставить на парковке — оттуда каждые пять минут ходят бесплатные маршрутки. Мы уже сегодня строим экологичный город.
  				</div>
+ 				<div class="PageArenda__content_number">1</div>
  			</div>
- 			<div class="PageArenda__content content-infrastructures">
+ 			<div class="PageArenda__content container content-infrastructures ">
  				<div class="PageArenda__content_header">
  					<div class="PageArenda__content_header content-pic"><img src="img/infrastruct.svg">
  					</div>
@@ -132,8 +133,9 @@
 
 					<span class="text-colored">Для всех резидентов доступны сервисы Технопарка</span>: ведение бухгалтерского учета, юридическая поддержка, помощь в подборе персонала, визовая поддержка и другие. 
  				</div>
+ 				<div class="PageArenda__content_number">2</div>
  			</div>
- 			<div class="PageArenda__content content-society">
+ 			<div class="PageArenda__content container content-society">
  				<div class="PageArenda__content_header">
  					<div class="PageArenda__content_header content-pic"><img src="img/society.svg">
  					</div>
@@ -141,6 +143,7 @@
  						<div class="PageArenda__content_header header-up">СООБЩЕСТВО</div>
  						<div class="PageArenda__content_header header-down">стартапов, экспертов, инвесторов и партнёров</div>
  					</div>
+ 					<div class="PageArenda__content_number">3</div>
  				</div>
  				<div style="clear: both;"></div>
  				<div class="PageArenda__content_line" ></div>
@@ -153,16 +156,16 @@
  				</div>
  			</div>
 
- 			<div class="PageArenda__presentation">
+ 			<div class="PageArenda__presentation container">
  				<div class="PageArenda__presentation_pic"><img src="img/download.svg"></div>
  				<div class="PageArenda__presentation_download"><a href="">Скачать презентацию (.pdf 8,6 Мб)</a></div>
  			</div>
 
- 			<div id="Gallery" class="PageArenda__headline">Галерея
+ 			<div id="Gallery" class="PageArenda__headline container">Галерея
  				<div class="PageArenda line-left"></div>
  			</div>
 
- 			<div class="PageArenda__Gallery">
+ 			<div class="PageArenda__Gallery container">
  				<div class="PageArenda__Gallery_column">
  					<div class="PageArenda__Gallery_pic"><img src="img/NG4A5558.png"></div><div class="PageArenda__Gallery_pic"><img src="img/NG4A9924.png"></div>
 
@@ -174,12 +177,112 @@
  					<div class="PageArenda__Gallery_pic"><img src="img/NG4A9991.png"></div><div class="PageArenda__Gallery_pic"><img src="img/3O5A1434.png"></div>
  				</div>
  			</div>
- 			<div id="ContactUs" class="PageArenda__headline">Свяжитесь с нами<div class="PageArenda line-left"></div>
+
+ 			<div id="ContactUs" class="PageArenda__headline container">Свяжитесь с нами<div class="PageArenda line-left"></div>
+ 			</div>
+
+ 			<div class="PageArenda__contacts_wrapper">
+ 				<div class="PageArenda__contacts container">
+ 					<div class="PageArenda__contacts_logo-back">
+ 						<img src="img/Layer_1.png">
+ 					</div>
+		 			<div class="PageArenda__contacts_text">
+		 				<div class="PageArenda__contacts_title">Всегда готовы проконсультировать</div>
+		 				<div class="PageArenda__contacts_name">Михаил Дударев</div>
+		 				<div class="PageArenda__contacts_phone"><a href="tel:+74959560033p2603">+7 (495) 956 00 33 доб. 2603</a></div> 				
+						<div class="PageArenda__contacts_phone"><a href="tel:+79858401924">+7 (985) 840 19 24</a></div>
+						<div class="PageArenda__contacts_mail"><a href="mailto:MDudarev@sk.ru">MDudarev@sk.ru</a></div>
+						<div class="PageArenda__contacts_name">Роман Афанасьев</div>
+		 				<div class="PageArenda__contacts_phone"><a href="tel:+74959560033p2420">+7 (495) 956 00 33 доб. 2420</a></div> 				
+						<div class="PageArenda__contacts_phone"><a href="tel:+79851408793">+7 (985) 140 87 93</a></div>
+						<div class="PageArenda__contacts_mail"><a href="mailto:RAfanasev@sk.ru">RAfanasev@sk.ru</a></div>
+
+		 					
+
+		 			</div>
+		 			<div id="ContactForm" class="PageArenda__form_data">
+		 				<div class="PageArenda__form_title">Узнать подробнее об условиях размещения</div>
+		 				<form name="user_data" action="">
+		 						<span class="PageArenda__form data-description">Ваше имя</span>
+		 						<div id="YourName"><input type="text" name="user_name"></div>
+		 						<span class="PageArenda__form data-description">Ваш телефон</span>
+		 						<div id="YourPhone"><input type="tel" name="user_phone"></div>
+		 						<span class="PageArenda__form data-description">Ваш комментарий</span>
+		 						<div id="YourComment"><textarea name="user_comment"></textarea></div>
+		 						<input type="submit" name="user_submit" value="Отправить">
+		 				</form>	
+		 			</div>
+		 		</div>		
+ 			</div>
+
+ 			<div id="ArendaRates" class="PageArenda__headline container">Ставки аренды
+ 				<div class="PageArenda line-left"></div>
+ 			</div>
+ 			<div class="PageArenda__prices container">
+ 				<div class="PageArenda__prices_header">
+ 					<div class="PageArenda__prices_header_left">
+	 					<div class="PageArenda__prices_header-up">Офисы и IT-лаборатории
+	 					</div>
+	 					<div class="PageArenda__prices_header-down">18 099 руб. за 1 м2./год
+	 					</div>
+	 				</div>
+	 				<div class="PageArenda__prices_header_right">
+	 					<div class="PageArenda__prices_header-up">Мокрые лаборатории
+	 					</div>
+	 					<div class="PageArenda__prices_header-down">18 434 руб. за 1 м2/год
+	 					</div>
+	 				</div>
+ 				</div>
+ 				<div class="PageArenda__prices_text">
+ 					В арендную плату включены плата за владение и пользование помещениями, налог на добавленную стоимость (НДС), плата за коммунальные услуги (за исключением электричества) и услуги по эксплуатации.<br><br>
+
+					Арендная плата не включает плату за дополнительные услуги и парковочные места.<br><br>
+					Цены действительны на 2018 год.<br><br>
+ 				</div>
+ 				<div class="PageArenda__PS">
+ 					<div class="PageArenda__PS_left">
+ 						<div class="PageArenda__PS_left-up">
+ 							<div class="PageArenda__PS_pic-att"></div>
+ 							<div class="PageArenda__PS_text">Только участники проекта «Сколково» имеют возможность арендовать
+							офисы и лабораторные площади.
+							</div>
+ 						</div>
+ 						<div class="PageArenda__PS_left-down">
+ 							Как стать участником
+ 						</div>
+ 					</div>
+ 					<div class="PageArenda__PS_right">
+ 						<div class="PageArenda__PS_right-up">
+ 							<div class="PageArenda__PS_pic-reg"></div>
+ 							<div class="PageArenda__PS_text">Госрегистрация юридических лиц по адресам помещений Технопарка
+							</div>
+ 						</div>
+ 						<div class="PageArenda__PS_right-down">
+ 							<div class="PageArenda__PS_memo_pic"><img src="img/memo.svg"></div>
+ 							<div class="PageArenda__PS_memo_download"><a href="">Скачать памятку (.doc 53 кБ)</a></div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 			<div class="PageArenda__footer_wrapper">
+ 				<div class="PageArenda__footer container">
+ 					<div class="PageArenda__footer_column">
+ 						<div class="PageArenda__footer_column-header">
+ 							
+ 						</div>
+ 						<div class="PageArenda__footer_column-list">
+ 							<ul>
+ 								
+ 							</ul>
+ 						</div>
+ 					</div>
+ 					
+ 				</div>
  			</div>
 
  			
 
- 		</div>
+ 		
  	</div>
  </body>
  </html>

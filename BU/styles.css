@@ -7,8 +7,9 @@ div{ box-sizing: border-box; }
     background: white;
 }
 
-.PageArenda__container{
-	max-width: 1200px;
+.container{
+	max-width: 100%;
+	width: 1200px;
 	margin: 0 auto;
 }
 
@@ -133,7 +134,7 @@ padding: 55px 0 70px;
 }
 
 .PageArenda__MainPic_text-arenda{
-	font-family: Helvetica Neue;
+	font-family: HelveticaNeue;
 	line-height: 36px;
 	font-size: 28px;
 	text-align: center;
@@ -237,31 +238,35 @@ padding: 55px 0 70px;
 }
 .PageArenda__form_text{overflow:hidden;}
 
-
-.PageArenda__form_data{
+#ConsultForm{
 	position: relative;
 	z-index: 2;
-	width: 55%;
-	max-width: 604px;
 	background: #BFDF14;
 	padding: 31px 104px 44px 79px;
+}
+.PageArenda__form_data{
+	width: 55%;
+	max-width: 604px;
 }
 
 .PageArenda__form_data input{
 	height: 38px;
-	width: 421px;
+	width: 411px;
 	padding: 0;
 	border: 0;
 	background: #F8FBDA;
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+	padding-left: 10px;
 }
 
 .PageArenda__form_data #YourName input,
 .PageArenda__form_data #YourPhone input{
 	margin: 0 0 13px 0; 
 }
-.PageArenda__form_data #YourComment input{
+.PageArenda__form_data textarea{
 	margin: 0; 
+	padding: 10px;
+	width: 401px;
 }
 
 .data-description{
@@ -281,7 +286,7 @@ padding: 55px 0 70px;
 	font-size: 22px;
 	color: #FFFFFF;
 }
-#YourComment input{
+#YourComment textarea{
 	height: 92px;
 }
 .PageArenda__form_data form div{
@@ -331,9 +336,26 @@ padding: 55px 0 70px;
 }
 
 .PageArenda__content{
-	width: 100%;
-	min-height: 403px;
-	padding: 39px 78px 0;
+	position: relative;
+	/*min-height: 403px;*/
+	padding: 39px 78px 1px;
+
+
+	box-shadow: 0px -2px 3px rgba(0, 0, 0, 0.03), 0px 4px 10px rgba(0, 0, 0, 0.06);
+	-moz-box-shadow: 0px -2px 3px rgba(0, 0, 0, 0.03), 0px 4px 10px rgba(0, 0, 0, 0.06);
+	-webkit-box-shadow: 0px -2px 3px rgba(0, 0, 0, 0.03), 0px 4px 10px rgba(0, 0, 0, 0.06);
+	-o-box-shadow: 0px -2px 3px rgba(0, 0, 0, 0.03), 0px 4px 10px rgba(0, 0, 0, 0.06);
+
+}
+.PageArenda__content_number{
+	position: absolute;
+	bottom: -62px;
+	right: -10px;
+
+	font-family: HelveticaNeueCyr;
+	line-height: 233px;
+	font-size: 160px;
+	color: rgba(205, 221, 0, 0.2);
 }
 .content-squares{ margin-bottom:calc( 38px + 20px); }
 
@@ -386,7 +408,7 @@ padding: 55px 0 70px;
 }
 
 .content-infrastructures{
-	margin-bottom: 23px;
+	margin-bottom: 39px;
 }
 
 .text-colored{
@@ -410,34 +432,30 @@ padding: 55px 0 70px;
 .PageArenda__presentation_download{
 	margin-top: 12px;
 	margin-left: 8.83px;
+	border-bottom: 1px solid #555555;
 }
 .PageArenda__presentation_download a{
 	font-family: HelveticaNeueCyr;
 	line-height: normal;
 	font-size: 14px;
-	text-decoration-line: underline;
+	text-decoration-line: none;
 	color: #555555;
 }
 .PageArenda__presentation_download a:hover{
 	color: #0000FF;
 }
-.PageArenda__presentation_download a:visited{
+/*.PageArenda__presentation_download a:visited{
 	color: #800080;
-}
+}*/
 
 #Gallery{
-	margin: 77px 0 48px;
+	margin: 77px auto 48px;
 }
 .PageArenda__Gallery{
 	display: flex;
 	flex-wrap: wrap;
 }
-.a1{
-	/*max-width: calc((100% - 48px) * 0.3333) ;
-	margin-bottom: 24px;
-	margin-right: 24px;
-	float: left;*/
-}
+
 .PageArenda__Gallery_column{
 	max-width: calc((100% - 48px) * 0.3333) ;
 	margin-right: 24px;
@@ -456,14 +474,219 @@ padding: 55px 0 70px;
 }
 
 #ContactUs{
-	margin: 123px 0 62px;
+	margin: 123px auto 62px;
+}
+
+.PageArenda__contacts_wrapper{
+	background: #CDDD00;
+	max-width: 1920px;
+	margin: 0 auto;
+	overflow: hidden;}
+
+.PageArenda__contacts{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 93px 0 93px; 
+}
+
+.PageArenda__contacts_logo-back{
+	position: absolute;
+	left: 164px;
+	bottom: 0;
+}
+
+.PageArenda__contacts_logo-back img{
+	opacity: 0.5;
+}
+.PageArenda__form_title{
+	font-family: HelveticaNeueCyr;
+	line-height: 35px;
+	font-size: 24px;
+	color: #FFFFFF;
+	margin-bottom: 7px;
+    margin-left: calc(-27px - 14px);
+}
+
+#ContactForm{
+	background: transparent;
+	padding:0 22px 0 160px;
+}
+
+.PageArenda__contacts_text{
+	width: 45%;
+}
+.PageArenda__contacts_title{
+	font-family: HelveticaNeueCyr;
+	line-height: normal;
+	font-weight: bolder;
+	font-size: 24px;
+	color: #FFFFFF;
+
+}
+
+.PageArenda__contacts_name{
+	font-family: HelveticaNeueCyr;
+	line-height: normal;
+	font-weight: bold;
+	font-size: 22px;
+	color: #FFFFFF;
+	margin-top: 38px; margin-bottom: 15px;
+
+}
+.PageArenda__contacts_phone{
+	margin-bottom: 5px;
+}
+.PageArenda__contacts_phone a{
+	font-family: HelveticaNeueCyr;
+	line-height: normal;
+	font-size: 18px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.PageArenda__contacts_mail{
+	margin-top: 18px;
+}
+.PageArenda__contacts_mail a{
+	font-family: HelveticaNeueCyr;
+	line-height: normal;
+	font-weight: lighter;
+	font-size: 18px;
+	text-decoration-line: underline;
+	color: #3477DB;
+}
+
+#ArendaRates{
+	margin-top: 158px;
+}
+.PageArenda__prices{
+	padding-top: 62px;
+
+}
+.PageArenda__prices_header{
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: flex-start;
+	
+}
+.PageArenda__prices_header_left{
+	margin-right: 186px;
+}
+.PageArenda__prices_header-up{
+	font-family: HelveticaNeueCyr;
+	line-height: 39px;
+	font-size: 22px;
+	font-weight: bold;
+	color: #FF8530;
+}
+.PageArenda__prices_header-down{
+	color: #555555;
+	font-family: HelveticaNeueCyr;
+	line-height: 39px;
+	font-size: 18px;
+	font-weight: bold;
+	/*font-stretch: condensed;*/
+}
+
+
+.PageArenda__prices_text{
+	margin-top: 30px; margin-bottom: 47px;
+	text-align: left;
+	font-family: HelveticaNeueCyr;
+	line-height: 29px;
+	font-size: 16px;
+	color: #555555;
+}
+
+.PageArenda__PS{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 160px;
+}
+
+.PageArenda__PS_left{
+	width: 40%;
+}
+
+.PageArenda__PS_right{
+	width: 40%;
+}
+.PageArenda__PS_pic-att{
+	min-width: 18px;
+	margin-right: 6px;
+	background: url(img/attention.svg) no-repeat;
+	background-position: top;
+}
+.PageArenda__PS_pic-reg{
+	min-width: 18px;
+	margin-right: 7px;
+	background: url(img/registr.svg) no-repeat;
+	background-position: top;
+}
+
+.PageArenda__PS_left-up{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 16px;
+}
+.PageArenda__PS_right-up{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 2px;
+	
+}
+.PageArenda__PS_text{
+	font-family: HelveticaNeueCyr;
+	line-height: 23px;
+	font-size: 14px;
+	color: #9C9C9C;
+}
+
+.PageArenda__PS_left-down{
+	font-family: HelveticaNeueCyr;
+	line-height: normal;
+	font-weight: bold;
+	font-size: 14px;
+	text-decoration-line: underline;
+	color: #CDDD00;
+
+}
+
+
+.PageArenda__PS_right-down{
+	display: flex;
+}
+.PageArenda__PS_memo_download{
+	border-bottom: 1px solid #555555;
+	margin-left: 10.92px;
+	padding-top: 3px;
+	max-height: 30px;
+}
+.PageArenda__PS_memo_download a{
+	font-family: HelveticaNeueCyr;
+	line-height: normal;
+	font-size: 18px;
+	line-height: 37px;
+	text-decoration-line: none;
+	color: #555555;
 }
 
 
 
+.PageArenda__footer_wrapper{
+	background: url(img/footer_back.jpg) no-repeat;
+	background-position: center;
+	min-height: 569px;
+}
+.PageArenda__footer{
+	display: flex;
+	justify-content: space-between;
 
-
-
+}
 
 
 @font-face {font-family:HelveticaNeueCyr;
@@ -475,6 +698,12 @@ padding: 55px 0 70px;
   src:url("font/helvetica-neue-cyr_bold/font.ttf");
   font-weight: bold;
   font-style: normal;}
+
+  @font-face {font-family:HelveticaNeueCyr;
+  src:url("font/helvetica-neue-condensed-bold/font.ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: condensed}
 
 @font-face {font-family:HelveticaNeue;
   src:url("font/helvetica-neue-condensed-bold/font.ttf");
