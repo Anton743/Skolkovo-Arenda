@@ -4,36 +4,50 @@
  <head>
   <title>сколково-аренда</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  
+
+	<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.3.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.3.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+	$(".gallery a").fancybox(); // выбор всех ссылок с классом gallery
+	});
+	</script>
+
  </head>
  <body>
  	<div class="PageArenda">
  
  			<div class="PageArenda__header container">
- 				<div class="PageArenda__header_logo">
- 					<img src="img/skolkovo-logo.svg">
- 				</div>
- 				<div class="PageArenda__header_nav">
- 					<ul class="PageArenda__header_nav_list">
- 						<li class="PageArenda__header_nav_list-item"><a href="">Главная</a> </li>
-						<li class="PageArenda__header_nav_list-item"><a href="">Возможности</a></li>
- 						<li class="PageArenda__header_nav_list-item"><a href="">О нас</a></li>
- 						<li class="PageArenda__header_nav_list-item"><a href="">Контакты</a></li>
- 					</ul>
- 				</div>
- 				<div class="PageArenda__header_contacts">
- 					<a class="PageArenda__header_contacts-phone" href="tel:+74959560033p2603">+7 (495) 956 00 33 доб. 2603</a><br>
- 					<a class="PageArenda__header_contacts-mail" href="mailto:RAfanasev@sk.ru">RAfanasev@sk.ru</a>
- 				</div>
+ 				<img class="PageArenda__header_logo" src="img/skolkovo-logo.svg">
+ 				<div class="a1">
+	 				<div class="PageArenda__header_nav">
+	 					<ul class="PageArenda__header_nav_list">
+	 						<li class="PageArenda__header_nav_list-item"><a href="">Главная</a> </li>
+							<li class="PageArenda__header_nav_list-item"><a href="">Возможности</a></li>
+	 						<li class="PageArenda__header_nav_list-item"><a href="">О нас</a></li>
+	 						<li class="PageArenda__header_nav_list-item"><a href="">Контакты</a></li>
+	 					</ul>
+	 				</div>
+	 				<div class="PageArenda__header_contacts">
+	 					<a class="PageArenda__header_contacts-phone" href="tel:+74959560033p2603">+7 (495) 956 00 33 доб. 2603</a>
+	 					<a class="PageArenda__header_contacts-mail" href="mailto:RAfanasev@sk.ru">RAfanasev@sk.ru</a>
+	 				</div>
+	 			</div>
  			</div>
- 			<div class="PageArenda__MainPic container">
- 				<div class="PageArenda__MainPic_text">
- 					<div class="PageArenda__MainPic_text-offices">Офисы и лаборатории					
- 					</div>
- 					<div class="PageArenda__MainPic_text-line"></div>
- 					<div class="PageArenda__MainPic_text-arenda">Аренда офисных и лабораторных площадей в Технопарке «Сколково»</div>
- 				</div>
+ 			<div class="container">
+ 				<div class="PageArenda__MainPic">
+	 				<div class="PageArenda__MainPic_text">
+	 					<div class="PageArenda__MainPic_text-offices">Офисы и лаборатории					
+	 					</div>
+	 					<div class="PageArenda__MainPic_text-line"></div>
+	 					<div class="PageArenda__MainPic_text-arenda">Аренда офисных и лабораторных площадей в Технопарке «Сколково»</div>
+	 				</div>
+	 			</div>
  			</div>
  			<div id="GetConsulting" class="PageArenda__headline container">Получите консультацию прямо сейчас
  				<div class="PageArenda line-left"></div>
@@ -96,65 +110,71 @@
  			<div id="WeOffer" class="PageArenda__headline container">Мы предлагаем
  				<div class="PageArenda line-left"></div>
  			</div>
- 			<div class="PageArenda__content content-squares container">
- 				<div class="PageArenda__content_header">
- 					<div class="PageArenda__content_header content-pic"><img src="img/square.svg">
- 					</div>
- 					<div class="PageArenda__content_header content-title">
- 						<div class="PageArenda__content_header header-up">ПЛОЩАДИ</div>
- 						<div class="PageArenda__content_header header-down">для офиса и лаборатории</div>
- 					</div>
- 				</div>
- 				<div style="clear: both;"></div>
- 				<div class="PageArenda__content_line" ></div>
- 				<div class="PageArenda__content_text">
- 					Мы предлагаем размещение офисов и лабораторий в комплексе Технопарка «Сколково» — самом большом технопарке Европы площадью 95 246 м2.<br><br>
+ 			<div class="container">
+	 			<div class="PageArenda__content content-squares ">
+	 				<div class="PageArenda__content_header">
+	 					<div class="PageArenda__content_header content-pic"><img src="img/square.svg">
+	 					</div>
+	 					<div class="PageArenda__content_header content-title">
+	 						<div class="PageArenda__content_header header-up">ПЛОЩАДИ</div>
+	 						<div class="PageArenda__content_header header-down">для офиса и лаборатории</div>
+	 					</div>
+	 				</div>
+	 				<div style="clear: both;"></div>
+	 				<div class="PageArenda__content_line" ></div>
+	 				<div class="PageArenda__content_text">
+	 					Мы предлагаем размещение офисов и лабораторий в комплексе Технопарка «Сколково» — самом большом технопарке Европы площадью 95 246 м2.<br><br>
 
-					Заботимся о комфорте и продумываем инфрастуктуру для работы и жизни: столовая, кафе, зоны для общения и отдыха, конференц-зал, аптека, магазины, спортзал.<br><br>
+						Заботимся о комфорте и продумываем инфрастуктуру для работы и жизни: столовая, кафе, зоны для общения и отдыха, конференц-зал, аптека, магазины, спортзал.<br><br>
 
-					До офиса можно добраться на машине, автобусе или электричке. Машину придётся оставить на парковке — оттуда каждые пять минут ходят бесплатные маршрутки. Мы уже сегодня строим экологичный город.
- 				</div>
- 				<div class="PageArenda__content_number">1</div>
- 			</div>
- 			<div class="PageArenda__content container content-infrastructures ">
- 				<div class="PageArenda__content_header">
- 					<div class="PageArenda__content_header content-pic"><img src="img/infrastruct.svg">
- 					</div>
- 					<div class="PageArenda__content_header content-title">
- 						<div class="PageArenda__content_header header-up">ИНФРАСТРУКТУРА</div>
- 						<div class="PageArenda__content_header header-down">для бизнеса и исследований</div>
- 					</div>
- 				</div>
- 				<div style="clear: both;"></div>
- 				<div class="PageArenda__content_line" ></div>
- 				<div class="PageArenda__content_text">
- 					<span class="text-colored">Развиваем исследовательскую инфрастуктуру</span>: более 55 центров коллективного пользования по всей России и 23 лаборатории 
-					в комплексе Технопарка «Сколково». Они разделены на индустриальные, междисциплинарные и профильные по кластерам.<br><br>
+						До офиса можно добраться на машине, автобусе или электричке. Машину придётся оставить на парковке — оттуда каждые пять минут ходят бесплатные маршрутки. Мы уже сегодня строим экологичный город.
+	 				</div>
+	 				<div class="PageArenda__content_number">1</div>
+	 			</div>
+	 		</div>
+	 		<div class="container">
+	 			<div class="PageArenda__content  content-infrastructures ">
+	 				<div class="PageArenda__content_header">
+	 					<div class="PageArenda__content_header content-pic"><img src="img/infrastruct.svg">
+	 					</div>
+	 					<div class="PageArenda__content_header content-title">
+	 						<div class="PageArenda__content_header header-up">ИНФРАСТРУКТУРА</div>
+	 						<div class="PageArenda__content_header header-down">для бизнеса и исследований</div>
+	 					</div>
+	 				</div>
+	 				<div style="clear: both;"></div>
+	 				<div class="PageArenda__content_line" ></div>
+	 				<div class="PageArenda__content_text">
+	 					<span class="text-colored">Развиваем исследовательскую инфрастуктуру</span>: более 55 центров коллективного пользования по всей России и 23 лаборатории 
+						в комплексе Технопарка «Сколково». Они разделены на индустриальные, междисциплинарные и профильные по кластерам.<br><br>
 
-					<span class="text-colored">Для всех резидентов доступны сервисы Технопарка</span>: ведение бухгалтерского учета, юридическая поддержка, помощь в подборе персонала, визовая поддержка и другие. 
- 				</div>
- 				<div class="PageArenda__content_number">2</div>
- 			</div>
- 			<div class="PageArenda__content container content-society">
- 				<div class="PageArenda__content_header">
- 					<div class="PageArenda__content_header content-pic"><img src="img/society.svg">
- 					</div>
- 					<div class="PageArenda__content_header content-title">
- 						<div class="PageArenda__content_header header-up">СООБЩЕСТВО</div>
- 						<div class="PageArenda__content_header header-down">стартапов, экспертов, инвесторов и партнёров</div>
- 					</div>
- 					<div class="PageArenda__content_number">3</div>
- 				</div>
- 				<div style="clear: both;"></div>
- 				<div class="PageArenda__content_line" ></div>
- 				<div class="PageArenda__content_text">
- 					Во-первых, вы работаете рядом с Фондом и Технопарком «Сколково». Интернет практически стирает расстояния, но личное общение дает больше возможностей. Назначить встречу с проектным менеджером, грантовым комитетом или PR-департаментом — в разы легче.<br><br>
+						<span class="text-colored">Для всех резидентов доступны сервисы Технопарка</span>: ведение бухгалтерского учета, юридическая поддержка, помощь в подборе персонала, визовая поддержка и другие. 
+	 				</div>
+	 				<div class="PageArenda__content_number">2</div>
+	 			</div>
+	 		</div>
+	 		<div class="container">
+	 			<div class="PageArenda__content  content-society">
+	 				<div class="PageArenda__content_header">
+	 					<div class="PageArenda__content_header content-pic"><img src="img/society.svg">
+	 					</div>
+	 					<div class="PageArenda__content_header content-title">
+	 						<div class="PageArenda__content_header header-up">СООБЩЕСТВО</div>
+	 						<div class="PageArenda__content_header header-down">стартапов, экспертов, инвесторов и партнёров</div>
+	 					</div>
+	 					<div class="PageArenda__content_number">3</div>
+	 				</div>
+	 				<div style="clear: both;"></div>
+	 				<div class="PageArenda__content_line" ></div>
+	 				<div class="PageArenda__content_text">
+	 					Во-первых, вы работаете рядом с Фондом и Технопарком «Сколково». Интернет практически стирает расстояния, но личное общение дает больше возможностей. Назначить встречу с проектным менеджером, грантовым комитетом или PR-департаментом — в разы легче.<br><br>
 
-					Во-вторых, вы постоянно находитесь рядом с участниками, стартапами, учеными: ходите на обед, стоите в очереди за кофе, встречаетесь в лифте. В Технопарке размещены более 400 компаний-стартапов – единомышленников.<br><br> 
+						Во-вторых, вы постоянно находитесь рядом с участниками, стартапами, учеными: ходите на обед, стоите в очереди за кофе, встречаетесь в лифте. В Технопарке размещены более 400 компаний-стартапов – единомышленников.<br><br> 
 
-					<span class="text-colored">В-третьих, вы имеете прямой доступ на все мероприятия в Сколково</span>. Приезжают именитые эксперты и просто те, кому интересно быть в авангарде технологической мысли.
- 				</div>
- 			</div>
+						<span class="text-colored">В-третьих, вы имеете прямой доступ на все мероприятия в Сколково</span>. Приезжают именитые эксперты и просто те, кому интересно быть в авангарде технологической мысли.
+	 				</div>
+	 			</div>
+	 		</div>
 
  			<div class="PageArenda__presentation container">
  				<div class="PageArenda__presentation_pic"><img src="img/download.svg"></div>
@@ -164,20 +184,16 @@
  			<div id="Gallery" class="PageArenda__headline container">Галерея
  				<div class="PageArenda line-left"></div>
  			</div>
-
- 			<div class="PageArenda__Gallery container">
- 				<div class="PageArenda__Gallery_column">
- 					<div class="PageArenda__Gallery_pic"><img src="img/NG4A5558.png"></div><div class="PageArenda__Gallery_pic"><img src="img/NG4A9924.png"></div>
-
- 				</div>
- 				<div class="PageArenda__Gallery_column">
- 					<div class="PageArenda__Gallery_pic"><img src="img/NG4A5556.png"></div><div class="PageArenda__Gallery_pic"><img src="img/NG4A3683.png"></div>
- 				</div>
- 				<div class="PageArenda__Gallery_column">
- 					<div class="PageArenda__Gallery_pic"><img src="img/NG4A9991.png"></div><div class="PageArenda__Gallery_pic"><img src="img/3O5A1434.png"></div>
- 				</div>
- 			</div>
-
+ 			<div class="container">
+	 			<div class="PageArenda__Gallery  gallery">
+	 				<a href="img/NG4A5558-large.png"><img class="PageArenda__Gallery_pic" src="img/NG4A5558.png"></a>
+	 				<a href="img/NG4A9924-large.png"><img class="PageArenda__Gallery_pic" src="img/NG4A9924.png"></a>
+					<a href="img/NG4A5556-large.png"><img class="PageArenda__Gallery_pic" src="img/NG4A5556.png"></a>
+					<a href="img/NG4A3683-large.png"><img class="PageArenda__Gallery_pic" src="img/NG4A3683.png"></a>
+					<a href="img/NG4A9991-large.png"><img class="PageArenda__Gallery_pic" src="img/NG4A9991.png"></a>
+					<a href="img/3O5A1434-large.png"><img class="PageArenda__Gallery_pic" src="img/3O5A1434.png"></a>
+	 			</div>
+			</div>
  			<div id="ContactUs" class="PageArenda__headline container">Свяжитесь с нами<div class="PageArenda line-left"></div>
  			</div>
 
@@ -188,20 +204,25 @@
  					</div>
 		 			<div class="PageArenda__contacts_text">
 		 				<div class="PageArenda__contacts_title">Всегда готовы проконсультировать</div>
-		 				<div class="PageArenda__contacts_name">Михаил Дударев</div>
-		 				<div class="PageArenda__contacts_phone"><a href="tel:+74959560033p2603">+7 (495) 956 00 33 доб. 2603</a></div> 				
-						<div class="PageArenda__contacts_phone"><a href="tel:+79858401924">+7 (985) 840 19 24</a></div>
-						<div class="PageArenda__contacts_mail"><a href="mailto:MDudarev@sk.ru">MDudarev@sk.ru</a></div>
-						<div class="PageArenda__contacts_name">Роман Афанасьев</div>
-		 				<div class="PageArenda__contacts_phone"><a href="tel:+74959560033p2420">+7 (495) 956 00 33 доб. 2420</a></div> 				
-						<div class="PageArenda__contacts_phone"><a href="tel:+79851408793">+7 (985) 140 87 93</a></div>
-						<div class="PageArenda__contacts_mail"><a href="mailto:RAfanasev@sk.ru">RAfanasev@sk.ru</a></div>
-
+		 				<div class="Dudarev-Afanasiev">
+		 				 <div class="Dudarev">
+			 				<div class="PageArenda__contacts_name">Михаил Дударев</div>
+			 				<div class="PageArenda__contacts_phone"><a href="tel:+74959560033p2603">+7 (495) 956 00 33 доб. 2603</a></div> 				
+							<div class="PageArenda__contacts_phone"><a href="tel:+79858401924">+7 (985) 840 19 24</a></div>
+							<div class="PageArenda__contacts_mail"><a href="mailto:MDudarev@sk.ru">MDudarev@sk.ru</a></div>
+						 </div>
+						 <div class="Afanasiev">
+							<div class="PageArenda__contacts_name">Роман Афанасьев</div>
+			 				<div class="PageArenda__contacts_phone"><a href="tel:+74959560033p2420">+7 (495) 956 00 33 доб. 2420</a></div> 				
+							<div class="PageArenda__contacts_phone"><a href="tel:+79851408793">+7 (985) 140 87 93</a></div>
+							<div class="PageArenda__contacts_mail"><a href="mailto:RAfanasev@sk.ru">RAfanasev@sk.ru</a></div>
+						 </div>
+						</div>
 		 					
 
 		 			</div>
 		 			<div id="ContactForm" class="PageArenda__form_data">
-		 				<div class="PageArenda__form_title">Узнать подробнее об условиях размещения</div>
+		 				<div class="PageArenda__form_title">Узнать подробнее об условиях<br>размещения</div>
 		 				<form name="user_data" action="">
 		 						<span class="PageArenda__form data-description">Ваше имя</span>
 		 						<div id="YourName"><input type="text" name="user_name"></div>
@@ -259,7 +280,7 @@
  						</div>
  						<div class="PageArenda__PS_right-down">
  							<div class="PageArenda__PS_memo_pic"><img src="img/memo.svg"></div>
- 							<div class="PageArenda__PS_memo_download"><a href="">Скачать памятку (.doc 53 кБ)</a></div>
+ 							<span class="PageArenda__PS_memo_download"><a href="">Скачать памятку (.doc 53 кБ)</a></span>
  						</div>
  					</div>
  				</div>

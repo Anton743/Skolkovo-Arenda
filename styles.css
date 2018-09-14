@@ -1,4 +1,63 @@
-div{ box-sizing: border-box; }
+*{ box-sizing: border-box; }
+
+
+/*от Дениса--------------------------------*/
+.header__burger
+{
+  display:none;
+
+  position:relative;
+
+}
+
+ .burger__bar1, .burger__bar2, .burger__bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.header__burger:hover
+{
+  cursor:pointer;
+}
+
+
+
+
+.burger-menu {
+  display: none;
+  position:absolute;
+
+  background:white;
+  z-index:2;
+  border-radius:3px;
+  border:1px solid black;
+width:95%;
+
+  }
+  .burger-menu ul {
+    margin-left: 15px;
+    width: 90%;
+    list-style: none;
+    text-align: left; }
+    .burger-menu ul li {
+      /*display:inline-block;*/
+      margin: 10px 0; }
+      .burger-menu ul li a {
+        text-decoration: none;
+        color: #555555;
+        font-family: HelveticaNeue;
+        font-weight: bold;
+        font-size: 24px; }
+      .burger-menu ul li a:hover {
+        text-decoration: underline; }
+
+.js-burger-menu {
+  display: block; }
+
+  /* ------------------------------------------*/
 
 .PageArenda{
 	max-width: 1920px;
@@ -126,7 +185,9 @@ div{ box-sizing: border-box; }
 	z-index: 1;
 	background-image: url(img/MainPic.jpg);
 	background-repeat: no-repeat;
+	background-position: top;
 	padding-top: 200px;padding-bottom: 250px;
+	    background-size: cover;
 }
 
 .PageArenda__MainPic_pic{
@@ -280,7 +341,7 @@ padding-top: 55px;padding-bottom: 70px;
 
 .PageArenda__form_data input{
 	height: 38px;
-	width: 411px;
+	width: 92%;
 	padding: 0;
 	border: 0;
 	background: #F8FBDA;
@@ -295,7 +356,11 @@ padding-top: 55px;padding-bottom: 70px;
 .PageArenda__form_data textarea{
 	margin: 0; 
 	padding: 10px;
-	width: 401px;
+	width: 92%;
+	background: #F8FBDA;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+	resize: none;
+    border:none;
 }
 
 .data-description{
@@ -314,10 +379,14 @@ padding-top: 55px;padding-bottom: 70px;
 	line-height: normal;
 	font-size: 22px;
 	color: #FFFFFF;
-	width: 421px;
+	width: 92%;
 }
 #YourComment textarea{
 	height: 92px;
+	background: #F8FBDA;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+	resize: none;
+    border:none;
 }
 .PageArenda__form_data form div{
 	position: relative;
@@ -367,6 +436,7 @@ padding-top: 55px;padding-bottom: 70px;
 
 .PageArenda__content{
 	position: relative;
+	overflow: hidden;
 	/*min-height: 403px;*/
 	padding: 39px 78px 1px;
 
@@ -396,7 +466,7 @@ padding-top: 55px;padding-bottom: 70px;
 .content-title{
 	float:left;
 }
-.PageArenda__content_header .content-title{
+.content-title{
 	margin-left: 32px;
 }
 .PageArenda__content_header{
@@ -482,29 +552,20 @@ padding-top: 55px;padding-bottom: 70px;
 	margin: 77px auto 48px;
 }
 .PageArenda__Gallery{
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.PageArenda__Gallery_column{
-	max-width: calc((100% - 48px) * 0.3333) ;
-	margin-right: 24px;
-}
-.PageArenda__Gallery .PageArenda__Gallery_column:last-child{
-	margin-right: 0;
+	column-count: 3;
+	column-gap: 1em;
 }
 .PageArenda__Gallery img{
-	display:block;
-	max-height: 100%;
-	max-width: 100%;
+	display: block;
+	width: 100%;
+	margin-bottom: 1em;
 }
-
-.PageArenda__Gallery_column .PageArenda__Gallery_pic:first-child{
-	margin-bottom: 24px;
+.PageArenda__Gallery a{
+	display: inline-block;
 }
 
 #ContactUs{
-	margin: 123px auto 62px;
+	margin: -9px auto 62px;/*margin: 123px auto 62px; из-за нижнего отступа у галереи*/
 }
 
 .PageArenda__contacts_wrapper{
@@ -546,7 +607,7 @@ padding-top: 55px;padding-bottom: 70px;
 	padding-right: 22px;
     padding-left: 60px;
     z-index: 2;
-	width: 503px;
+	max-width: 503px;
 }
 
 .PageArenda__contacts_text{
@@ -695,6 +756,7 @@ padding-top: 55px;padding-bottom: 70px;
 	display: flex;
 }
 .PageArenda__PS_memo_download{
+	display: block;
 	border-bottom: 1px solid #555555;
 	margin-left: 10.92px;
 	padding-top: 3px;
@@ -721,6 +783,116 @@ padding-top: 55px;padding-bottom: 70px;
 	justify-content: space-between;
 
 }
+
+
+
+/*футер от Дениса------------------------------*/
+.footer-background {
+  background-color: #414141;
+  text-align: center;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: HelveticaNeue;
+    font-weight: bold;
+    font-stretch: condensed;
+  color: #A9A9A9;
+  padding-top: 50px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 30px; }
+
+.footer-lists {
+  text-align: left;
+  padding-bottom: 50px; }
+
+.footer-list {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  text-align: left;
+  padding-right: 45px; }
+  .footer-list li a {
+    font-size: 14px;
+    line-height: 22px;
+    font-family: HelveticaNeue;
+    font-weight: bold;
+    font-stretch: condensed;
+    color: #A9A9A9;
+    text-decoration: none; }
+  .footer-list li a:hover {
+    text-decoration: underline; }
+  .footer-list li:first-child {
+    margin-bottom: 20px; }
+    .footer-list li:first-child a {
+      font-size: 16px;
+      line-height: 36px;
+      font-family: HelveticaNeue;
+    font-weight: bold;
+    font-stretch: condensed;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase; }
+    .footer-list li:first-child a:hover {
+      text-decoration: underline; }
+
+.footer-user-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end; }
+
+.footer-user-links__img {
+  position: relative;
+  left: 0; }
+
+.footer__links {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  flex-wrap: wrap; }
+  .footer__links a {
+    text-decoration: none;
+    color: #A9A9A9;
+    margin: 0 20px; }
+  .footer__links a:hover {
+    text-decoration: underline; }
+  .footer__links p {
+    margin: 0 20px; }
+
+.social-networks {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .social-networks a {
+    text-decoration: none;
+    margin: 10px 10px; }
+.tech-support a{
+    font-family: HelveticaNeueCyr;
+    line-height: normal;
+    font-weight: normal;
+    text-decoration: none;
+    color: #A9A9A9;
+}
+.gray {
+    color: rgb(169, 169, 169);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1164px) {
+  .footer-lists {
+    text-align: center; }
+  .footer-list {
+    margin-right: 0;
+    padding-right: 20px; }
+    .footer-list :not(:first-child) {
+      display: none; } }
+@media screen and (max-width: 572px) {
+    .text__service {
+       box-shadow: none;
+    }
+}
+/*-----------------------------------------------------*/
+
+
+
 
 @media screen and (max-width: 1138px) {
 	.PageArenda__form_wrapper{
@@ -825,6 +997,338 @@ padding-top: 55px;padding-bottom: 70px;
 	.PageArenda__header_nav{
 		width: 85%;
 	}
+	.PageArenda__header_contacts-phone{
+		font-size: 18px;
+	}
+
+	.PageArenda__Gallery{
+	column-count: 2;
+	column-gap: 1em;
+	}
+	.PageArenda__MainPic_text-offices{
+		font-size: 48px;
+		}
+	.PageArenda__MainPic_text-arenda{
+		font-size: 24px;
+	}
+	.PageArenda__headline{
+		font-size: 32px;
+		line-height: 52px;
+	}
+	.list_container{
+		display: none;
+	}
+	.PageArenda__form_list .list_text:after{
+		display: none;
+	}
+	.PageArenda__form_list_item{
+		justify-content: center;
+	}
+	.list_text{
+		margin-left: 0;
+	}
+	.list_text{
+		font-size: 14px;
+	}
+	.PageArenda__form_list_item{
+		margin-left: 0;
+		margin-bottom: 8px;
+	}
+	.PageArenda__content_header .header-up{
+		font-size: 20px;
+	}
+	.PageArenda__content_header .header-down{
+		font-size: 18px;
+	}
+	.PageArenda__content_text{
+		font-size: 14px;
+		line-height: 27px;
+	}
+	.PageArenda__headline{
+		margin: 60px auto 12px;
+	}
+	.PageArenda__form_text{
+		padding-bottom: 15px;
+	}
+	#WeOffer{
+		margin-top: 80px; margin-bottom: 0;
+	}
+	.content-pic img{
+		width: 8vh;
+	}
+	.content-title{
+		padding-top: 1px;
+		margin-left: 28px;
+	}
+	.PageArenda__content_number{
+		font-size: 144px;
+	}
+	.PageArenda__content{
+		padding: 29px 20px 1px;
+	}
+	#Gallery {
+    margin: 57px auto 38px;
+	}
+	.PageArenda__prices_header-up{
+		font-size: 20px;
+		line-height: 37px;
+	}
+	.PageArenda__prices_header-down{
+		font-size: 16px;
+		line-height: 37px;
+	}
+	#ContactUs {
+    	margin: 72px auto 42px;
+	}
+	.PageArenda__prices_text{
+		line-height: 27px;
+    	font-size: 14px;
+	}
+	.PageArenda__PS_text{
+		line-height: 21px;
+    	font-size: 12px;
+	}
+	.PageArenda__PS_left-down{
+		font-size: 12px;
+	}
+	.PageArenda__PS_memo_download a{
+		font-size: 16px;
+    	line-height: 35px;
+	}
+	.PageArenda__PS_memo_pic img{
+		width: 3.5vh;
+	}
+	.PageArenda__PS{
+		margin-bottom: 120px;
+	}
+	.PageArenda__PS_left,.PageArenda__PS_right{
+		width: 45%;
+	}
+	.data-description{
+		font-size: 12px;
+	}
+
+
+}
+
+@media screen and (max-width: 620px){
+	.PageArenda__PS{
+		flex-direction: column;
+		align-items: center;
+	}
+	.PageArenda__PS_left,.PageArenda__PS_right{
+		width: 70%;
+	}
+	.PageArenda__prices_text{
+		margin-bottom: 37px;
+	}
+	.PageArenda__PS_left{
+		margin-bottom: 40px;
+	}
+	.PageArenda__PS{
+		margin-bottom: 60px;
+	}
+}
+
+
+@media screen and (max-width: 419px){
+	.PageArenda__Gallery{
+		columns: 1;
+	}
+	.PageArenda__header_logo{
+		width: 14vh;
+	}
+	.a1{
+		margin-left: 99px;
+    	min-height: 70px;
+	}
+	.PageArenda__header_contacts a{
+		margin-left: 8px;
+	}
+	.PageArenda__header_contacts-phone{
+		font-size: 14px;
+	}
+	.PageArenda__header_contacts-mail{
+		font-size: 12px;
+	}
+	.PageArenda__MainPic_text-offices{
+		font-size: 36px;
+	}
+	.PageArenda__MainPic_text-arenda{
+		font-size: 20px;
+	}
+	.PageArenda__MainPic{
+		background-size: 144vh
+	}
+	.PageArenda__MainPic{
+		padding-top: 130px;
+    	padding-bottom: 148px;
+	}
+	.PageArenda__headline{
+		line-height: 40px;
+	    font-size: 26px;
+	}
+	.list_text{
+		font-size: 12px;
+	}
+	.content-pic img{
+		display: none;
+	}
+	.content-title{
+		margin-left: 0;
+	}
+	.PageArenda__content_header .header-up{
+		line-height: 24px;
+    	font-size: 18px;
+	}
+
+	.PageArenda__content_header .header-down{
+		line-height: 22px;
+    	font-size: 16px;
+	}
+	.content-squares{
+		margin-bottom: 30px;
+	}
+	.PageArenda__content_number{
+		font-size: 114px;
+		line-height: 202px;
+	}
+
+
+
+
+
+
+	.PageArenda__form_list_item{
+		margin-left: 0;
+		margin-bottom: 8px;
+	}
+	
+	.PageArenda__content_text{
+		font-size: 14px;
+		line-height: 27px;
+	}
+	.PageArenda__headline{
+		margin: 60px auto 12px;
+	}
+	.PageArenda__form_text{
+		padding-bottom: 15px;
+	}
+	#WeOffer{
+		margin-top: 80px; margin-bottom: 0;
+	}
+	.content-pic img{
+		width: 8vh;
+	}
+	.content-society{
+		margin-bottom: 49px;
+	}
+	#ContactUs {
+    	margin: 52px auto 32px;
+	}
+	.PageArenda__contacts_title{
+		    font-size: 22px;
+	}
+	.PageArenda__contacts{
+		padding-top: 53px;
+    	padding-bottom: 53px;
+	}
+	.PageArenda__contacts_name{
+		font-size: 20px;
+	}
+	.Dudarev-Afanasiev{
+		flex-direction: column;
+		align-items: center;
+	}
+	.PageArenda__contacts_name{
+		margin-top:25px;
+	}
+	.PageArenda__form_title{
+		line-height: 33px;
+    font-size: 22px;
+	}
+	.PageArenda__form_data form input[type="submit"]{
+		font-size: 20px;
+	}
+	#ArendaRates{
+		margin-top: 88px;
+    margin-bottom: 12px;
+	}
+	.PageArenda__prices{
+		padding-top: 22px;
+	}
+	.PageArenda__prices_header{
+		align-items: center;
+	}
+	.PageArenda__prices_header_left{
+		margin-right: 0;
+	}
+	.PageArenda__prices_header-up{
+		font-size: 18px;
+		line-height: 33px;
+	}
+	.PageArenda__prices_header-down{
+		font-size: 14px;
+		line-height: 33px;
+	}
+	.PageArenda__PS_left,.PageArenda__PS_right{
+			width: 85%;
+	}
+	.PageArenda__PS_memo_download a{
+			font-size: 13px;
+	    	line-height: 31px;
+		}
+	.PageArenda__PS_memo_pic img{
+		width: 3.0vh;
+		margin-top: 5px;
+	}
+	.PageArenda__PS_memo_download{
+		padding-top: 0;
+	}
+}
+
+	/* от Дениса-----------------------*/
+	@media screen and (min-width:970px)
+{
+  .js-burger-menu
+  {
+    display:none;
+  }  
+}
+
+
+@media screen and (max-width:960px)
+{
+
+  .a1
+  {
+    flex-direction:row;
+  }
+
+  .PageArenda__header_nav
+  {
+    display:none;
+  }
+
+  .header__burger
+  {
+    display:block;
+    align-self:center;
+  }
+
+
+
+
+}
+/*-------------------------------------------*/
+	
+
+
+
+
+
+
+
 
 
 }

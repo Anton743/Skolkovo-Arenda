@@ -1,4 +1,4 @@
-div{ box-sizing: border-box; }
+*{ box-sizing: border-box; }
 
 .PageArenda{
 	max-width: 1920px;
@@ -9,26 +9,46 @@ div{ box-sizing: border-box; }
 
 .container{
 	max-width: 100%;
-	width: 1200px;
+	width: 1240px;
+	padding: 0 20px;
 	margin: 0 auto;
 }
 
 .PageArenda__header{
-	display: flex;
+	position: relative;
+	/*display: flex;
 	justify-content: space-between;
-	/*min-height: 100px;*/
-	align-items: center;
+	min-height: 100px;
+	align-items: center;*/
 
 }
+.PageArenda__header_logo{
+	display: block;
+	position: absolute;
+	height: 100%;
+	left: 20px;
+}
+.a1{
+	margin-left: 140px;
+	display: flex;
+	min-height: 100px;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+
 .PageArenda__header_nav{
-	width: 50%;
+	width: calc( 92% - 265px);
 }
 .PageArenda__header_nav_list{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
 	list-style-type: none;
 }
-.PageArenda__header_nav_list-item{	position: relative; }
+.PageArenda__header_nav_list-item{	
+	position: relative;
+	margin-right: 22px;  }
 .PageArenda__header_nav_list-item a{ 
 	text-decoration: none; 
 	font-family: HelveticaNeueCyr;
@@ -42,7 +62,7 @@ div{ box-sizing: border-box; }
 	display: block;
 	position: absolute;
 	right: -17px;
-	top: calc(50% - 7px);
+	top: calc(50% - 5px);
 	background-image: url(img/polygon.svg);
 	background-origin: content-box;
 	background-repeat: no-repeat;
@@ -54,7 +74,7 @@ div{ box-sizing: border-box; }
 	display: block;
 	position: absolute;
 	right: -17px;
-	top: calc(50% - 7px);
+	top: calc(50% - 5px);
 	background-image: url(img/polygon.svg);
 	background-origin: content-box;
 	background-repeat: no-repeat;
@@ -67,7 +87,7 @@ div{ box-sizing: border-box; }
 	display: block;
 	position: absolute;
 	right: -17px;
-	top: calc(50% - 7px);
+	top: calc(50% - 5px);
 	background-image: url(img/polygon.svg);
 	background-origin: content-box;
 	background-repeat: no-repeat;
@@ -78,14 +98,18 @@ div{ box-sizing: border-box; }
 
 .PageArenda__header_contacts{
 	text-align: right;
-	padding: 35px 0 23px;
+	padding: 12px 0 0;
+	width: 265px;
 }
 
 .PageArenda__header_contacts-phone{
+	display: block;
+	margin-bottom: 8px;
 	font-family: HelveticaNeueCyr;
 	line-height: normal;
 	font-weight: normal;
 	font-size: 20px;
+	text-decoration: none;
 	color: #BFDF14;}
 
 .PageArenda__header_contacts-mail{
@@ -102,7 +126,9 @@ div{ box-sizing: border-box; }
 	z-index: 1;
 	background-image: url(img/MainPic.jpg);
 	background-repeat: no-repeat;
-	padding: 200px 0 250px;
+	background-position: top;
+	padding-top: 200px;padding-bottom: 250px;
+	    background-size: cover;
 }
 
 .PageArenda__MainPic_pic{
@@ -113,7 +139,7 @@ div{ box-sizing: border-box; }
 .PageArenda__MainPic_text{
 background: rgba(205, 221, 0, 0.7);
 text-align: center;
-padding: 55px 0 70px;
+padding-top: 55px;padding-bottom: 70px;
 /*backdrop-filter: blur(14px); 
  Note: backdrop-filter has minimal browser support */
 }
@@ -181,12 +207,15 @@ padding: 55px 0 70px;
     justify-content: left;
     margin-bottom: 23px; margin-left: 22px;
 }
+
+}
 .PageArenda__form_list:last-child{
 	margin-bottom: 0;
 }
 .list_container{
 	position: relative;
 	height: 37px;
+	min-width: 139px;
 	width: calc(115px + 24.71px);
 }
 .list_number{
@@ -236,17 +265,19 @@ padding: 55px 0 70px;
 
 
 }
-.PageArenda__form_text{overflow:hidden;}
 
 #ConsultForm{
 	position: relative;
 	z-index: 2;
 	background: #BFDF14;
-	padding: 31px 104px 44px 79px;
+	padding-top: 31px;
+    padding-left: 104px;
+    padding-bottom: 44px;
+    padding-right: 45px;
 }
 .PageArenda__form_data{
 	width: 55%;
-	max-width: 604px;
+	width: 604px;
 }
 
 .PageArenda__form_data input{
@@ -285,6 +316,7 @@ padding: 55px 0 70px;
 	line-height: normal;
 	font-size: 22px;
 	color: #FFFFFF;
+	width: 421px;
 }
 #YourComment textarea{
 	height: 92px;
@@ -337,6 +369,7 @@ padding: 55px 0 70px;
 
 .PageArenda__content{
 	position: relative;
+	overflow: hidden;
 	/*min-height: 403px;*/
 	padding: 39px 78px 1px;
 
@@ -366,7 +399,7 @@ padding: 55px 0 70px;
 .content-title{
 	float:left;
 }
-.PageArenda__content_header .content-title{
+.content-title{
 	margin-left: 32px;
 }
 .PageArenda__content_header{
@@ -452,29 +485,20 @@ padding: 55px 0 70px;
 	margin: 77px auto 48px;
 }
 .PageArenda__Gallery{
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.PageArenda__Gallery_column{
-	max-width: calc((100% - 48px) * 0.3333) ;
-	margin-right: 24px;
-}
-.PageArenda__Gallery .PageArenda__Gallery_column:last-child{
-	margin-right: 0;
+	column-count: 3;
+	column-gap: 1em;
 }
 .PageArenda__Gallery img{
-	display:block;
-	max-height: 100%;
-	max-width: 100%;
+	display: block;
+	width: 100%;
+	margin-bottom: 1em;
 }
-
-.PageArenda__Gallery_column .PageArenda__Gallery_pic:first-child{
-	margin-bottom: 24px;
+.PageArenda__Gallery a{
+	display: inline-block;
 }
 
 #ContactUs{
-	margin: 123px auto 62px;
+	margin: -9px auto 62px;/*margin: 123px auto 62px; из-за нижнего отступа у галереи*/
 }
 
 .PageArenda__contacts_wrapper{
@@ -489,7 +513,8 @@ padding: 55px 0 70px;
 	justify-content: space-between;
 	flex-direction: row;
 	flex-wrap: wrap;
-	padding: 93px 0 93px; 
+	padding-top: 93px;
+	padding-bottom: 93px; 
 }
 
 .PageArenda__contacts_logo-back{
@@ -512,11 +537,14 @@ padding: 55px 0 70px;
 
 #ContactForm{
 	background: transparent;
-	padding:0 22px 0 160px;
+	padding-right: 22px;
+    padding-left: 60px;
+    z-index: 2;
+	width: 503px;
 }
 
 .PageArenda__contacts_text{
-	width: 45%;
+	width: 42%;
 }
 .PageArenda__contacts_title{
 	font-family: HelveticaNeueCyr;
@@ -661,6 +689,7 @@ padding: 55px 0 70px;
 	display: flex;
 }
 .PageArenda__PS_memo_download{
+	display: block;
 	border-bottom: 1px solid #555555;
 	margin-left: 10.92px;
 	padding-top: 3px;
@@ -688,7 +717,389 @@ padding: 55px 0 70px;
 
 }
 
+@media screen and (max-width: 1138px) {
+	.PageArenda__form_wrapper{
+		flex-direction: column;
+	}
+	.PageArenda__form_text{
+		width: 100%;
+	}
+	.PageArenda__form_data{
+		width: 100%;
+	}
+	.PageArenda__form_list .list_text:after{
+		right: calc( -1051px - 17px);
+    	width: 1051px;
+	}
+	.PageArenda__form_list_item{
+		overflow: hidden;
+	}
+	#ConsultForm{
+		margin: 0 auto;
+		max-width: 604px;
+	}
+}
+@media screen and (max-width: 1024px) {
 
+	.a1{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.PageArenda__header_contacts{
+		text-align: left;
+		width: 100%;
+	}
+	.PageArenda__header_contacts a{
+		display:inline-block;
+		margin-left: 20px;
+	}
+	.PageArenda__header_nav{
+		width: 75%;
+		margin-left: 20px;
+	}
+	.PageArenda__header_nav_list{
+		justify-content: space-between;
+	}
+
+	.PageArenda__headline{
+		font-size: 37px;
+	}
+	
+	.PageArenda__headline{
+		margin: 80px auto 32px;
+	}
+	.PageArenda__form_text{
+		padding-top: 40px;
+	}
+	#WeOffer{
+		margin-top: 100px;
+		margin-bottom: 17px;
+	}
+	.PageArenda__content_number{
+		line-height: 219px;
+    	font-size: 140px;
+	}
+	.PageArenda__content_text{
+		margin-bottom: 36px;
+	}
+	#ArendaRates{
+		margin-top: 128px;
+    	margin-bottom: 12px;
+	}
+
+
+}
+
+@media screen and (max-width: 940px) {
+	.PageArenda__contacts{
+		flex-direction: column;
+		padding-top: 73px;
+    	padding-bottom: 73px;
+	}
+	.PageArenda__contacts_text{
+		width: 100%;
+	}
+	.PageArenda__contacts_title{
+		text-align: center;
+	}
+	.Dudarev-Afanasiev{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	#ContactForm{
+		margin: 35px auto 0px;
+	}
+	.PageArenda__form_title{
+		text-align: center;
+	}
+
+
+}
+@media screen and (max-width: 767px) {
+	.PageArenda__header_nav{
+		width: 85%;
+	}
+	.PageArenda__Gallery{
+	column-count: 2;
+	column-gap: 1em;
+	}
+	.PageArenda__MainPic_text-offices{
+		font-size: 48px;
+		}
+	.PageArenda__MainPic_text-arenda{
+		font-size: 24px;
+	}
+	.PageArenda__headline{
+		font-size: 32px;
+		line-height: 52px;
+	}
+	.list_container{
+		display: none;
+	}
+	.PageArenda__form_list .list_text:after{
+		display: none;
+	}
+	.PageArenda__form_list_item{
+		justify-content: center;
+	}
+	.list_text{
+		margin-left: 0;
+	}
+	.list_text{
+		font-size: 14px;
+	}
+	.PageArenda__form_list_item{
+		margin-left: 0;
+		margin-bottom: 8px;
+	}
+	.PageArenda__content_header .header-up{
+		font-size: 20px;
+	}
+	.PageArenda__content_header .header-down{
+		font-size: 18px;
+	}
+	.PageArenda__content_text{
+		font-size: 14px;
+		line-height: 27px;
+	}
+	.PageArenda__headline{
+		margin: 60px auto 12px;
+	}
+	.PageArenda__form_text{
+		padding-bottom: 15px;
+	}
+	#WeOffer{
+		margin-top: 80px; margin-bottom: 0;
+	}
+	.content-pic img{
+		width: 8vh;
+	}
+	.content-title{
+		padding-top: 1px;
+		margin-left: 28px;
+	}
+	.PageArenda__content_number{
+		font-size: 144px;
+	}
+	.PageArenda__content{
+		padding: 29px 20px 1px;
+	}
+	#Gallery {
+    margin: 57px auto 38px;
+	}
+	.PageArenda__prices_header-up{
+		font-size: 20px;
+		line-height: 37px;
+	}
+	.PageArenda__prices_header-down{
+		font-size: 16px;
+		line-height: 37px;
+	}
+	#ContactUs {
+    	margin: 72px auto 42px;
+	}
+	.PageArenda__prices_text{
+		line-height: 27px;
+    	font-size: 14px;
+	}
+	.PageArenda__PS_text{
+		line-height: 21px;
+    	font-size: 12px;
+	}
+	.PageArenda__PS_left-down{
+		font-size: 12px;
+	}
+	.PageArenda__PS_memo_download a{
+		font-size: 16px;
+    	line-height: 35px;
+	}
+	.PageArenda__PS_memo_pic img{
+		width: 3.5vh;
+	}
+	.PageArenda__PS{
+		margin-bottom: 120px;
+	}
+	.PageArenda__PS_left,.PageArenda__PS_right{
+		width: 45%;
+	}
+
+
+
+}
+
+@media screen and (max-width: 620px){
+	.PageArenda__PS{
+		flex-direction: column;
+		align-items: center;
+	}
+	.PageArenda__PS_left,.PageArenda__PS_right{
+		width: 70%;
+	}
+	.PageArenda__prices_text{
+		margin-bottom: 37px;
+	}
+	.PageArenda__PS_left{
+		margin-bottom: 40px;
+	}
+	.PageArenda__PS{
+		margin-bottom: 60px;
+	}
+}
+
+
+@media screen and (max-width: 419px){
+	.PageArenda__Gallery{
+		columns: 1;
+	}
+	.PageArenda__MainPic_text-offices{
+		font-size: 36px;
+	}
+	.PageArenda__MainPic_text-arenda{
+		font-size: 20px;
+	}
+	.PageArenda__MainPic{
+		background-size: 144vh
+	}
+	.PageArenda__MainPic{
+		padding-top: 130px;
+    	padding-bottom: 148px;
+	}
+	.PageArenda__headline{
+		line-height: 40px;
+	    font-size: 26px;
+	}
+	.list_text{
+		font-size: 12px;
+	}
+	.content-pic img{
+		display: none;
+	}
+	.content-title{
+		margin-left: 0;
+	}
+	.PageArenda__content_header .header-up{
+		line-height: 24px;
+    	font-size: 18px;
+	}
+
+	.PageArenda__content_header .header-down{
+		line-height: 22px;
+    	font-size: 16px;
+	}
+	.content-squares{
+		margin-bottom: 30px;
+	}
+	.PageArenda__content_number{
+		font-size: 114px;
+		line-height: 202px;
+	}
+
+
+
+
+
+
+	.PageArenda__form_list_item{
+		margin-left: 0;
+		margin-bottom: 8px;
+	}
+	
+	.PageArenda__content_text{
+		font-size: 14px;
+		line-height: 27px;
+	}
+	.PageArenda__headline{
+		margin: 60px auto 12px;
+	}
+	.PageArenda__form_text{
+		padding-bottom: 15px;
+	}
+	#WeOffer{
+		margin-top: 80px; margin-bottom: 0;
+	}
+	.content-pic img{
+		width: 8vh;
+	}
+	.content-society{
+		margin-bottom: 49px;
+	}
+	#ContactUs {
+    	margin: 52px auto 32px;
+	}
+	.PageArenda__contacts_title{
+		    font-size: 22px;
+	}
+	.PageArenda__contacts{
+		padding-top: 53px;
+    	padding-bottom: 53px;
+	}
+	.PageArenda__contacts_name{
+		font-size: 20px;
+	}
+	.Dudarev-Afanasiev{
+		flex-direction: column;
+		align-items: center;
+	}
+	.PageArenda__contacts_name{
+		margin-top:25px;
+	}
+	.PageArenda__form_title{
+		line-height: 33px;
+    font-size: 22px;
+	}
+	.PageArenda__form_data form input[type="submit"]{
+		font-size: 20px;
+	}
+	#ArendaRates{
+		margin-top: 88px;
+    margin-bottom: 12px;
+	}
+	.PageArenda__prices{
+		padding-top: 22px;
+	}
+	.PageArenda__prices_header{
+		align-items: center;
+	}
+	.PageArenda__prices_header_left{
+		margin-right: 0;
+	}
+	.PageArenda__prices_header-up{
+		font-size: 18px;
+		line-height: 33px;
+	}
+	.PageArenda__prices_header-down{
+		font-size: 14px;
+		line-height: 33px;
+	}
+	.PageArenda__PS_left,.PageArenda__PS_right{
+			width: 85%;
+	}
+	.PageArenda__PS_memo_download a{
+			font-size: 13px;
+	    	line-height: 31px;
+		}
+	.PageArenda__PS_memo_pic img{
+		width: 3.0vh;
+		margin-top: 5px;
+	}
+	.PageArenda__PS_memo_download{
+		padding-top: 0;
+	}
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+}
 @font-face {font-family:HelveticaNeueCyr;
   src:url("font/helvetica-neue-cyr_normal/font.ttf");
   font-weight: normal;
