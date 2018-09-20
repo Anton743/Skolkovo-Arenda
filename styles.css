@@ -23,9 +23,6 @@
   cursor:pointer;
 }
 
-
-
-
 .burger-menu {
   display: none;
   position:absolute;
@@ -67,6 +64,12 @@ width:95%;
 }
 
 .container{
+	max-width: 100%;
+	width: 1240px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+.container_pic{
 	max-width: 100%;
 	width: 1240px;
 	padding: 0 20px;
@@ -525,9 +528,10 @@ padding-top: 55px;padding-bottom: 70px;
 	justify-content: flex-end;
 }
 
-.present-pic img{ width: 100%; }
+.PageArenda__presentation_pic img{
+	 	width: 100%; 
+	 	margin-top: 4px; }
 
-.present-pic{}
 
 .PageArenda__presentation_download{
 	margin-top: 12px;
@@ -892,11 +896,33 @@ padding-top: 55px;padding-bottom: 70px;
 /*-----------------------------------------------------*/
 
 
-
-
-@media screen and (max-width: 1138px) {
+@media screen and (max-width: 1200px) {
 	.PageArenda__form_wrapper{
-		flex-direction: column;
+		padding: 0;
+	}
+	.container_pic{
+		padding: 0;
+	}
+	.PageArenda__header_logo{
+		left: 0;
+	}
+}
+@media screen and (max-width: 419px) {
+	#ContactForm{
+		padding-right: 0;
+		padding-left: 35px;
+	}
+
+	.PageArenda__form_data input,
+	.PageArenda__form_data form input[type="submit"]{
+		width: 100%;
+	}
+	.PageArenda__form_data textarea{
+		width: 100%;
+	}
+	#ConsultForm{
+		padding-left: 60px;
+		padding-right: 20px;
 	}
 	.PageArenda__form_text{
 		width: 100%;
@@ -904,6 +930,15 @@ padding-top: 55px;padding-bottom: 70px;
 	.PageArenda__form_data{
 		width: 100%;
 	}
+
+
+}
+
+@media screen and (max-width: 1138px) {
+	.PageArenda__form_wrapper{
+		flex-direction: column;
+	}
+	
 	.PageArenda__form_list .list_text:after{
 		right: calc( -1051px - 17px);
     	width: 1051px;
@@ -1209,7 +1244,10 @@ padding-top: 55px;padding-bottom: 70px;
 		line-height: 27px;
 	}
 	.PageArenda__headline{
-		margin: 60px auto 12px;
+		margin: 40px auto 12px;
+	}
+	.PageArenda__form_text{
+		padding-top: 20px;
 	}
 	.PageArenda__form_text{
 		padding-bottom: 15px;
