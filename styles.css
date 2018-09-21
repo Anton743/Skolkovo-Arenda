@@ -119,6 +119,9 @@ width:95%;
 	font-size: 18px;
 	color: #555555
 }
+.PageArenda__header_nav_list-item a:hover{
+	text-decoration: underline;
+}
 .PageArenda__header_nav_list-item:nth-child(2):after{
 	content: '';
 	display: block;
@@ -375,6 +378,7 @@ padding-top: 55px;padding-bottom: 70px;
 }
 
 .PageArenda__form_data form input[type="submit"]{
+	cursor: pointer;
 	background: linear-gradient(270deg, #2A2A2A 0%, #474747 90.36%);
 	height: 59px;
 	margin: 37px 0 0;
@@ -546,7 +550,7 @@ padding-top: 55px;padding-bottom: 70px;
 	color: #555555;
 }
 .PageArenda__presentation_download a:hover{
-	color: #0000FF;
+	
 }
 /*.PageArenda__presentation_download a:visited{
 	color: #800080;
@@ -745,27 +749,35 @@ padding-top: 55px;padding-bottom: 70px;
 	color: #9C9C9C;
 }
 
-.PageArenda__PS_left-down{
+.PageArenda__PS_left-down a{
 	font-family: HelveticaNeueCyr;
 	line-height: normal;
 	font-weight: bold;
 	font-size: 14px;
-	text-decoration-line: underline;
+	text-decoration: none;
 	color: #CDDD00;
 
 }
-
+.PageArenda__PS_left-down a:hover{
+	border-bottom: 1.5px solid #CDDD00;
+}
 
 .PageArenda__PS_right-down{
 	display: flex;
 }
+
 .PageArenda__PS_memo_download{
 	display: block;
+}
+.PageArenda__PS_memo_download a{
 	border-bottom: 1px solid #555555;
 	margin-left: 10.92px;
 	padding-top: 3px;
 	max-height: 30px;
 }
+.PageArenda__PS_memo_download a:hover{
+}
+
 .PageArenda__PS_memo_download a{
 	font-family: HelveticaNeueCyr;
 	line-height: normal;
@@ -935,6 +947,9 @@ padding-top: 55px;padding-bottom: 70px;
 }
 
 @media screen and (max-width: 1138px) {
+	.PageArenda__form_text{
+		width: 55%;
+	}
 	.PageArenda__form_wrapper{
 		flex-direction: column;
 	}
@@ -944,7 +959,7 @@ padding-top: 55px;padding-bottom: 70px;
     	width: 1051px;
 	}
 	.PageArenda__form_list_item{
-		overflow: hidden;
+		/*overflow: hidden;*/
 	}
 	#ConsultForm{
 		margin: 0 auto;
@@ -1026,9 +1041,14 @@ padding-top: 55px;padding-bottom: 70px;
 		text-align: center;
 	}
 
-
+	.PageArenda__form_text{
+		width: 100%;
+	}
 }
 @media screen and (max-width: 767px) {
+	.PageArenda__form_list .list_text:after{
+		display: none;
+	}
 	.PageArenda__header_nav{
 		width: 85%;
 	}
