@@ -1046,6 +1046,10 @@ padding-top: 55px;padding-bottom: 70px;
 	}
 }
 @media screen and (max-width: 767px) {
+	.PageArenda__PS_memo_download{
+		padding-top: 3px;
+	}
+
 	.PageArenda__form_list .list_text:after{
 		display: none;
 	}
@@ -1341,7 +1345,7 @@ padding-top: 55px;padding-bottom: 70px;
 		margin-top: 5px;
 	}
 	.PageArenda__PS_memo_download{
-		padding-top: 0;
+		padding-top: 8px;
 	}
 }
 
